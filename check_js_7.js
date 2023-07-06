@@ -47,5 +47,5 @@ const car = {
   };
   
   car.displayInfo()
-  car.calculateTravelTime(400);
+  car.calculateTravelTime(300);
   
