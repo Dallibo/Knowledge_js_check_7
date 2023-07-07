@@ -1,26 +1,3 @@
-class PrintMachine {
-    constructor(color, level) {
-        this._color = color;
-        this._level = level;
-    }
-
-    set color(value) {
-        if (this.#isColor(value)) {
-            this._color = value;
-        } else {
-            this._color = "black";
-        }
-    }
-
-    get color() {
-        return this._color;
-    }
-
-    print(text) {
-        document.write(`<div style="color: ${this._color}">${text}</div>`);
-    }
-}
-
 const car = {
     manufacturer: "Toyota",
     model: "Camry",
@@ -48,4 +25,31 @@ const car = {
   
   car.displayInfo()
   car.calculateTravelTime(300);
+  
+
+  class Fraction {
+    constructor(numerator, denominator) {
+      this.numerator = numerator;
+      this.denominator = denominator;
+    }
+  }
+
+
+  class Fraction {
+    constructor(numerator, denominator) {
+      this.numerator = numerator;
+      this.denominator = denominator;
+    }
+  
+    add(otherFraction) {
+      const commonDenominator = this.denominator * otherFraction.denominator;
+      const sumNumerator = (this.numerator * otherFraction.denominator) + (otherFraction.numerator * this.denominator);
+      return new Fraction(sumNumerator, commonDenominator);
+    }
+  }
+  const fraction1 = new Fraction(1, 4);
+  const fraction2 = new Fraction(1, 2);
+  
+  const sum = fraction1.add(fraction2);
+  console.log(`Сума: ${sum.numerator}/${sum.denominator}`);
   
