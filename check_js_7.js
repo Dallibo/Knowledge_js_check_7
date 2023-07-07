@@ -32,14 +32,6 @@ const car = {
       this.numerator = numerator;
       this.denominator = denominator;
     }
-  }
-
-
-  class Fraction {
-    constructor(numerator, denominator) {
-      this.numerator = numerator;
-      this.denominator = denominator;
-    }
   
     add(otherFraction) {
       const commonDenominator = this.denominator * otherFraction.denominator;
