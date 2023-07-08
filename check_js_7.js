@@ -43,5 +43,5 @@ const car = {
   const fraction2 = new Fraction(1, 2);
   
   const sum = fraction1.add(fraction2);
-  console.log(`Сума: ${sum.numerator}/${sum.denominator}`);
+  console.log(`Сума: ${sum.numerator}/${sum.denominator}`)
   
